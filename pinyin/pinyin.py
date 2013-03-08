@@ -5,7 +5,7 @@ __all__ = ['get', 'get_pinyin', 'get_initial']
 import os
 import re
 
-_punct_re = re.compile(ur'[\t !"#$%&\'()*\-/<=>?@\[\\\]^_`{|},.？]+')
+_punct_re = re.compile(ur'[\t\r\n !"#$%&\'()*\-/<=>?@\[\\\]^_`{|},.？。，！；—%～￥…]+')
 # init pinyin dict
 pinyin_dict = {}
 dat = os.path.join(os.path.dirname(__file__), "Mandarin.dat")
